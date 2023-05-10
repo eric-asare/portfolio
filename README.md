@@ -11,4 +11,7 @@ free icons;flaticon.com/free-icons/google
 
 * easy pie chart : https://github.com/rendro/easy-pie-chart
 
+* cdns : https://cdnjs.com/
+
+
 

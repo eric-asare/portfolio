@@ -215,13 +215,36 @@ observer.observe(document.getElementById('skill-backend'));
 observer.observe(document.getElementById('skill-uiux'));
 observer.observe(document.getElementById('skill-cooking'));
 
-  // ---------------- JS for Mobile Menu ------------------
-  var mobileMenu = document.getElementById("mobile-menu");
-  function openMenu() {
-    mobileMenu.style.right = "0px";
-  }
+// ---------------- Project Section ------------------ 
+// Get all the elements matching the selector '.filters ul li'
+var filterItems = document.querySelectorAll('.filters ul li');
 
-  function closeMenu() {
-    mobileMenu.style.right = "-400px";
+// Attach a click event listener to each filter item
+filterItems.forEach(function(item) {
+  item.addEventListener('click', function() {
+    // Remove the 'after-click' class from all filter items
+    filterItems.forEach(function(item) {
+      item.classList.remove('after-click');
+    });
+
+    // Add the 'after-click' class to the clicked filter item
+    this.classList.add('after-click');
+
+    // Get the data-filter attribute value of the clicked filter item
+    var data = this.getAttribute('data-filter');
+
+    // Apply the filter to the Isotope grid
+    iso.arrange({ filter: data });
+  });
+});
+
+// Initialize Isotope grid
+var elem = document.querySelector('.grid');
+var iso = new Isotope(elem, {
+  itemSelector: '.all',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.all'
   }
+});
 });

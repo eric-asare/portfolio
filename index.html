@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
                 <li><a href="#contact">Contact Me<span class="color">.</span></a></li>
                 <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </ul>
-            <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenue()"></i></p>
+            <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenu()"></i></p>
         </nav>
         <!-- Avatar-->
         <div>
@@ -86,12 +87,68 @@
             <div id="skill-uiux" class="skills-container"></div>
             <div id="skill-cooking" class="skills-container"></div>
         </div>
-
-      
     </section>
 
+     
+    <!-- projects section start -->
+<section class="portfolio section">
+    <h2 class="sub-title">Projects<span class="color">.</span></h2>
+    <div class="container-fluid">
+      <div class="filters">
+        <ul>
+          <li class="active" data-filter="*"> All</li>
+          <li data-filter=".websites">Websites</li>
+          <li data-filter=".apps">Mobile Apps</li>
+          <li data-filter=".games">Games</li>
+          <li data-filter=".art">Art</li>
+        </ul>
+      </div>
+  
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-4 all websites">
+            <div class="item">
+              <div class="thumb">
+                <img src="https://source.layoutflow.com/assets/astronaut-3d.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3><a href="#">Astronaut 3D</a></h3>
+                <p>Generated Using AI. It's a Photo from Unsplash.</p>
+                <a href="#" class="view">Code <span class="fa-solid fa-angle-right"></span></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-4 all ">
+            <div class="item">
+              <div class="thumb">
+                <img src="https://source.layoutflow.com/assets/astronaut-3d.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3><a href="#">Astronaut 3D</a></h3>
+                <p>Generated Using AI. It's a Photo from Unsplash.</p>
+                <a href="#" class="view">Code <span class="fa-solid fa-angle-right"></span></a>
+              </div>
+            </div>
+          </div>
+      
+      </div>
+  
+    </div>
+  </section>
 
-
-    <script src="script.js"></script>
+ 
 </body>
+ <script>
+      // ---------------- JS for Mobile Menu ------------------
+  var mobileMenu = document.getElementById("mobile-menu");
+  function openMenu() {
+    mobileMenu.style.right = "0px";
+  }
+
+  function closeMenu() {
+    mobileMenu.style.right = "-400px";
+  }
+
+ </script>
 </html>
