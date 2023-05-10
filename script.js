@@ -68,30 +68,15 @@ var webBar = new ProgressBar.Circle('#skill-web', {
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
-    circle.setText("Web Apps")
+    circle.setText('<p>Web Apps<br></p>' + Math.round(circle.value() * 100) + ' %');
   }
 });
 
-var mobileBar = new ProgressBar.Circle('#skill-web', {
-  color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  from: { color: '#aaa', width: 4 },
-  to: { color: '#0d6efd', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-    circle.setText("Web Apps")
-  }
-});
+webBar.text.style.fontFamily = 'Poppins, sans-serif';
+webBar.text.style.fontSize = '20px';
+webBar.text.style.textAlign = 'center';
 
 webBar.animate(0.9);  // Number from 0.0 to 1.0
-
 
 
 // ---------------- JS for Mobile Menu ------------------

@@ -30,7 +30,8 @@ html {
     color: var(--primary-color);
 }
 
-span.bgcolor, .bgcolor {
+span.bgcolor,
+.bgcolor {
     background-color: var(--primary-color);
     display: inline-block;
     padding: 0 5px;
@@ -46,6 +47,7 @@ span.bgcolor, .bgcolor {
     font-size: 60px;
     font-weight: 800;
 }
+
 .btn {
     display: block;
     margin: 20px auto 0px auto;
@@ -65,7 +67,17 @@ span.bgcolor, .bgcolor {
     background-color: var(--primary-color);
     color: black;
 }
-/* -------------------------------------------------------*/
+
+/* ---------------------------Avatar---------------------------*/
+#avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid var(--primary-color);
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -76,7 +88,8 @@ nav img {
     width: 50px;
 }
 
-nav .fa-solid, nav p {
+nav .fa-solid,
+nav p {
     display: none;
 }
 
@@ -113,14 +126,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-/* avatar */
-#avatar{
-    width: 300px;
-    border-radius: 50%;
-    margin-top: 20px;
-    border: 5px solid var(--primary-color);
-    transition: transform 0.5s;
-}
+
 /* ------------------- workExperience ------------------- */
 #workExperience {
     margin-top: 20px;
@@ -139,7 +145,8 @@ nav ul li a:hover::after {
     border-radius: 17px;
     transition: background 1s, color 1s, transform 0.5s;
 }
-.workExperience-col i{
+
+.workExperience-col i {
     font-size: 70px;
 }
 
@@ -147,6 +154,7 @@ nav ul li a:hover::after {
     margin-top: 10px;
     font-size: 20px;
 }
+
 .workExperience-col p {
     margin-top: 10px;
     font-size: 14px;
@@ -169,118 +177,87 @@ nav ul li a:hover::after {
     color: black;
 }
 
-#googleLogo{
+#googleLogo {
     width: 50px;
 }
 
-#kehillahLogo{
+#kehillahLogo {
     width: 50px;
     border-radius: 5px;
 }
 
-#qlubLogo{
+#qlubLogo {
     width: 80px;
     border-radius: 5px;
 }
+
+/* -------------------Skills------------------- */
+#skills {
+    margin-top: 20px;
+}
+
+
+
 /* ------------------- CSS For Mobile Screens ------------------- */
 
 @media screen and (max-width: 890px) {
-nav ul {
-    position: absolute;
-    top: 0px;
-    right: -500px;
-    height: 100vh;
-    width: 40%;
-    background: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    padding: 25px 25px;
-    z-index: 4;
-}
-
-nav ul .fa-solid {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    transition: color 0.5s;
-}
-
-nav ul .fa-solid:hover {
-    color: black;
-}
-nav .fa-solid, nav p {
-    display: block;
-    font-size: 35px;
-    cursor: pointer;
-
-}
-
-nav ul li a {
-    transition: color 0.5s;
-    font-size: 23px;
-    margin-top: 15px;
-}
-
-nav ul li a:hover {
-    color: black;
-}
-
-}
-
-/* ------------------- Tech Stack ------------------- */
-.flex-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-  
-  .single-chart {
-    width: 33%;
-    justify-content: space-around ;
-  }
-  
-  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-    animation: progress 1s ease-out forwards;
-  }
-  
-  @keyframes progress {
-    0% {
-      stroke-dasharray: 0 100;
+    nav ul {
+        position: absolute;
+        top: 0px;
+        right: -500px;
+        height: 100vh;
+        width: 40%;
+        background: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+        z-index: 4;
     }
-  }
-  
-  .circular-chart.orange .circle {
-    stroke: #ff9f00;
-  }
-  
-  .circular-chart.green .circle {
-    stroke: #4CC790;
-  }
-  
-  .circular-chart.blue .circle {
-    stroke: #3c9ee5;
-  }
-  
-  .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        transition: color 0.5s;
+    }
+
+    nav ul .fa-solid:hover {
+        color: black;
+    }
+
+    nav .fa-solid,
+    nav p {
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+
+    }
+
+    nav ul li a {
+        transition: color 0.5s;
+        font-size: 23px;
+        margin-top: 15px;
+    }
+
+    nav ul li a:hover {
+        color: black;
+    }
+
+}
+
+/* ------------------- Skills ------------------- */
+.skills-container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#skills-container2 {
+    margin: 10px;
+    width: 10px;
+    height: 2px;
+    position: relative;
   }
 
 @media screen and (max-width: 600px) {
