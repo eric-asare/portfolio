@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
     <title>Document</title>
 </head>
@@ -137,10 +138,46 @@
     </div>
   </section>
 
- 
-</body>
+     <!------------------------------ Contact ------------------------------>
+     
+     <section>
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <form>
+                        <input type="text" name="fullName" id="full-name" placeholder="Your Name">
+                        <input type="email" name="Email" id="email" placeholder="Your Email">
+                        <textarea name="message" id="message"rows="10" placeholder="Your Message ..."></textarea>
+                        <input type="submit" value="Submit" class="btn2">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h2 class="sub-title">My Contact<span class="color">.</span></h2>
+                    <p class="bgcolor"><i class="fa-sharp fa-solid fa-phone"></i> Phone</p>
+                    <p>+923053666838</p>
+                    <p class="bgcolor"><i class="fa-solid fa-paper-plane"></i> Email</p>
+                    <p>farmanali6349@gmail.com</p>
+                    <p class="bgcolor"><i class="fa-solid fa-user"></i> Social Profiles</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <div class="container">
+            <p>Copyright © 2023 <span class="color">E</span>ric<span class="color">.</span> Asare | All rights reserved.</p>
+        </div>
+    </footer>
+    
  <script>
-      // ---------------- JS for Mobile Menu ------------------
+    // ---------------- JS for Mobile Menu ------------------
   var mobileMenu = document.getElementById("mobile-menu");
   function openMenu() {
     mobileMenu.style.right = "0px";
@@ -148,7 +185,6 @@
 
   function closeMenu() {
     mobileMenu.style.right = "-400px";
-  }
-
- </script>
+  }</script>
+</body>
 </html>

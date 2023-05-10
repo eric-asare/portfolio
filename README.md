@@ -12,6 +12,9 @@ free icons;flaticon.com/free-icons/google
 * easy pie chart : https://github.com/rendro/easy-pie-chart
 
 * cdns : https://cdnjs.com/
+* smtpjs : https://smtpjs.com/
+* elastic email : https://elasticemail.com/select-product?r=20b444a2-b3af-4eb8-bae7-911f6097521c
+
 
 
 
