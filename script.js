@@ -52,6 +52,48 @@ function playAnim() {
 // Start typing text
 playAnim();
 
+//---------------- Progress Bar for Skills------------------
+
+var webBar = new ProgressBar.Circle('#skill-web', {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  from: { color: '#aaa', width: 4 },
+  to: { color: '#0d6efd', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    circle.setText("Web Apps")
+  }
+});
+
+var mobileBar = new ProgressBar.Circle('#skill-web', {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  from: { color: '#aaa', width: 4 },
+  to: { color: '#0d6efd', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    circle.setText("Web Apps")
+  }
+});
+
+webBar.animate(0.9);  // Number from 0.0 to 1.0
+
+
+
 // ---------------- JS for Mobile Menu ------------------
 var mobileMenu = document.getElementById("mobile-menu");
 function openMenu() {
