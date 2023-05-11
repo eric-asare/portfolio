@@ -16,5 +16,7 @@ free icons;flaticon.com/free-icons/google
 * elastic email : https://elasticemail.com/select-product?r=20b444a2-b3af-4eb8-bae7-911f6097521c
 
 
+* professional with personal expression, use fav color - I love black and purple, almost always wearing a blank pants or shirt, my desktop wallpaper is purple always , even chrome theme., sprinkle in my personality - love cooking consider that as one of my developing skills, challenge myself design wise - design a whole site with just one font and three colour - black, white and purple. 
 
+* showcase my skills
 

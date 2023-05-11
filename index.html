@@ -48,8 +48,8 @@
         </div>
 
         <!--CV-->
-        <div>
-            <button>Download CV</button>
+        <div class="cv">
+            <button id="download-cv">Download CV</button>
         </div>
     </section>
 
@@ -250,25 +250,23 @@
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <form>
+                        <form id="contact-form">
                             <input type="text" name="fullName" id="full-name" placeholder="Your Name">
                             <input type="email" name="Email" id="email" placeholder="Your Email">
-                            <textarea name="message" id="message" rows="10" placeholder="Your Message ..."></textarea>
+                            <textarea name="message" id="message" rows="10" placeholder="Your Message To Me ..."></textarea>
                             <input type="submit" value="Submit" class="btn2">
                         </form>
                     </div>
                     <div class="contact-right">
                         <h2 class="sub-title">Contact<span class="color">.</span></h2>
                         <p class="bgcolor"><i class="fa-sharp fa-solid fa-phone"></i> Phone</p>
-                        <p>+971053666838</p>
+                        <p> +971053666838 <button id="number-copy"><i class="fa-solid fa-copy"></i></button></p>
                         <p class="bgcolor"><i class="fa-solid fa-paper-plane"></i> Email</p>
-                        <p>ericasare043@gmail.com</p>
-                        <p class="bgcolor"><i class="fa-solid fa-user"></i> Social Profiles</p>
+                        <p>ericasare043@gmail.com <button id="email-copy"><i class="fa-solid fa-copy"></i></button></p>
+                        <p class="bgcolor"><i class="fa-solid fa-user"></i> Social Profiles </p>
                         <ul>
                             <li><a href="https://www.linkedin.com/in/eric-asare/"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li><a href="https://twitter.com/_ericasare"><i class="fa-brands fa-square-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -280,19 +278,6 @@
             <p>Copyright © 2023 <span class="color">Eric</span><span class="color">.</span> Asare <span class="color">|</span> All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // ---------------- JS for Mobile Menu ------------------
-        var mobileMenu = document.getElementById("mobile-menu");
-
-        function openMenu() {
-            mobileMenu.style.right = "0px";
-        }
-
-        function closeMenu() {
-            mobileMenu.style.right = "-400px";
-        }
-    </script>
 </body>
 
 </html>

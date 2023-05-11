@@ -178,9 +178,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     x.addEventListener("change", function() {
         if (x.matches) { // If media query matches
+            mobileBar.text.style.fontSize = '10px';
+            webBar.text.style.fontSize = '10px';
+            backendBar.text.style.fontSize = '10px';
+            uiuxBar.text.style.fontSize = '10px';
             cookingBar.text.style.fontSize = '10px';
         } else {
             cookingBar.text.style.fontSize = '20px';
+            uiuxBar.text.style.fontSize = '20px';
+            backendBar.text.style.fontSize = '20px';
+            webBar.text.style.fontSize = '20px';
+            mobileBar.text.style.fontSize = '20px';
         }
 
     });
@@ -264,4 +272,34 @@ document.addEventListener("DOMContentLoaded", function() {
             columnWidth: '.all'
         }
     });
+
+    // ---------------- For Fast Rendering, Animations in JS File slows down quick actions ------------------
+
+    // Hamburger Menu
+    var mobileMenu = document.getElementById("mobile-menu");
+
+    function openMenu() {
+        mobileMenu.style.right = "0px";
+    }
+
+    function closeMenu() {
+        mobileMenu.style.right = "-400px";
+    }
+
+    // Download CV
+    document.getElementById("download-cv").addEventListener("click", () => {
+        window.open("https://drive.google.com/file/d/1kcBmpJvWkmTmP6MYLFZjGgeN3ceBkexs/view?usp=sharing");
+    });
+
+    // Copy Email and Number
+    document.getElementById('email-copy').addEventListener("click", () => {
+        navigator.clipboard.writeText("ericasare043@gmail.com");
+    });
+
+    document.getElementById("number-copy").addEventListener("click", () => {
+        navigator.clipboard.writeText("+971053666838");
+    });
+
+
+
 });

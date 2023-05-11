@@ -122,6 +122,30 @@ p {
 }
 
 
+/* ------------------- CV ------------------- */
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.cv {
+    display: flex;
+    justify-content: center;
+}
+
+#download-cv {
+    font-size: 16px;
+}
+
+
 /* ------------------- skills ------------------- */
 
 #specialize {
@@ -646,6 +670,10 @@ textarea::placeholder {
     margin-top: 8px;
 }
 
+.contact-right p:hover {
+    color: var(--primary-color);
+}
+
 .contact-right p.bgcolor {
     margin-top: 20px;
     display: inline-block;
@@ -687,10 +715,6 @@ footer {
 
 footer p {
     font-size: 20px;
-}
-
-button {
-    display: none;
 }
 
 @media screen and (max-width: 600px) {
