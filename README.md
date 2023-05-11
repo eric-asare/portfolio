@@ -18,5 +18,7 @@ free icons;flaticon.com/free-icons/google
 
 * professional with personal expression, use fav color - I love black and purple, almost always wearing a blank pants or shirt, my desktop wallpaper is purple always , even chrome theme., sprinkle in my personality - love cooking consider that as one of my developing skills, challenge myself design wise - design a whole site with just one font and three colour - black, white and purple. 
 
+Adding subtle but powerful animations like copy
+
 * showcase my skills
 

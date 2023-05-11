@@ -294,10 +294,27 @@ document.addEventListener("DOMContentLoaded", function() {
     // Copy Email and Number
     document.getElementById('email-copy').addEventListener("click", () => {
         navigator.clipboard.writeText("ericasare043@gmail.com");
+
+        // Add the 'copy-animation' class to trigger the gelatin effect
+        document.getElementById('email-copy').classList.add('copy-animation');
+
+        // Remove the 'copy-animation' class after the animation completes
+        setTimeout(function() {
+            document.getElementById('email-copy').classList.remove('copy-animation');
+        }, 500);
     });
+
 
     document.getElementById("number-copy").addEventListener("click", () => {
         navigator.clipboard.writeText("+971053666838");
+
+        // Add the 'copy-animation' class to trigger the gelatin effect
+        document.getElementById('number-copy').classList.add('copy-animation');
+
+        // Remove the 'copy-animation' class after the animation completes
+        setTimeout(function() {
+            document.getElementById('number-copy').classList.remove('copy-animation');
+        }, 500);
     });
 
 

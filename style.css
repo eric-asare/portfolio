@@ -130,10 +130,35 @@ button {
     border: 1px solid var(--primary-color);
     padding: 1rem;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: var(--primary-color);
+}
+
+@keyframes gelatine {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.copy-animation {
+    animation-name: gelatine;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
 }
 
 .cv {
@@ -670,10 +695,6 @@ textarea::placeholder {
     margin-top: 8px;
 }
 
-.contact-right p:hover {
-    color: var(--primary-color);
-}
-
 .contact-right p.bgcolor {
     margin-top: 20px;
     display: inline-block;
@@ -701,7 +722,7 @@ textarea::placeholder {
 }
 
 .contact-right ul li a:hover {
-    color: var(--primary-color);
+    color: white;
     transform: translateY(-8px);
 }
 
