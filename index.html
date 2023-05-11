@@ -18,26 +18,30 @@
         <nav>
             <img src="./images/logo.png" class="logo">
             <ul id="mobile-menu">
-                <li><a href="#header">Home<span class="color">.</span></a></li>
                 <li><a href="#about">About<span class="color">.</span></a></li>
-                <li><a href="#workExperience">workExperience<span class="color">.</span></a></li>
-                <li><a href="#portfolio">Portfolio<span class="color">.</span></a></li>
+                <li><a href="#workExperience">Experience<span class="color">.</span></a></li>
+                <li><a href="#portfolio">Projects<span class="color">.</span></a></li>
                 <li><a href="#contact">Contact Me<span class="color">.</span></a></li>
                 <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </ul>
             <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenu()"></i></p>
         </nav>
+    <div class="about">
         <!-- Avatar-->
         <div>
             <img id="avatar" src="./images/avatar.png" alt="avatar">
         </div>
-        <!-- About -->
-        <div>
-            <h2>My name is Eric Asare</h2>
+       <div class="about-info">
+         <!-- About -->
+         <div>
+            <h2 class = "sub-title">My name is  <span class="color">E</span>ric Asare</h2>
         </div>
         <div class="typing-container">
             <p>I am <span class="typing-text"></span></p>
         </div>
+       </div>
+    </div>
+      
         <!--CV-->
         <div>
             <button>Download CV</button>
@@ -80,13 +84,18 @@
 
     <section class="skills">
         <h2 class="sub-title">Skills<span class="color">.</span></h2>
-        <div>
-            <h2>I'm a developer and I specialize in </h2>
-            <div id="skill-web" class="skills-container"></div>
-            <div id="skill-mobile" class="skills-container"></div>
-            <div id="skill-backend" class="skills-container"></div>
-            <div id="skill-uiux" class="skills-container"></div>
-            <div id="skill-cooking" class="skills-container"></div>
+        <h2 id = "specialize">I'm a developer and I specialize in </h2>
+        <div class = "skill-list">
+            <div class="skills-first-set">
+                <div id="skill-web" class="skills-container"></div>
+                <div id="skill-mobile" class="skills-container"></div>
+                <div id="skill-backend" class="skills-container"></div>
+            </div>
+            <div class="skills-last-set">
+                <div id="skill-uiux" class="skills-container"></div>
+                <div id="skill-cooking" class="skills-container"></div>
+            </div>
+
         </div>
     </section>
 
@@ -119,6 +128,7 @@
               </div>
             </div>
           </div>
+          
           
           <div class="col-sm-4 all ">
             <div class="item">

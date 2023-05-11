@@ -172,6 +172,23 @@ document.addEventListener("DOMContentLoaded", function () {
   cookingBar.text.style.fontFamily = 'Poppins, sans-serif';
   cookingBar.text.style.fontSize = '20px';
   cookingBar.text.style.textAlign = 'center';
+
+ // reduce size of progress bar on mobile
+ var x = window.matchMedia("(max-width: 700px)")
+
+ x.addEventListener("change", function () {
+    if (x.matches) { // If media query matches
+      cookingBar.text.style.fontSize = '10px';
+    } else {
+      cookingBar.text.style.fontSize = '20px';
+    }
+
+ });
+
+
+
+
+
 // Define the options for the Intersection Observer
 const options = {
   root: null, // Use the viewport as the root
