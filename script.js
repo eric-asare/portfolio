@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-
-
-
     var typingElement = document.querySelector(".typing-text");
     var typeArray = ["a Software Engineer", "from Ghana", "studying Computer Science at NYU", "graduating in December 2024", "looking for full-time opportunities"];
     var index = 0,
