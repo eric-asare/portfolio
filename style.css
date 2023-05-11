@@ -80,7 +80,7 @@ span.bgcolor,
 /* ------------------- About ------------------- */
 
 .about {
-    margin-top: 10%;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
