@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   var typingElement = document.querySelector(".typing-text");
-  var typeArray = ["a Software Engineer 👨‍💻", "from Ghana, West Africa 🇬🇭", "studying Computer Science at NYU 💜", "graduating in December 2024 🎓", "looking for full-time opportunities 💰"];
+  var typeArray = ["a Software Engineer", "from Ghana, West ", "studying Computer Science at NYU", "graduating in December 2024", "looking for full-time opportunities"];
   var index = 0,
     isAdding = true,
     typeIndex = 0;
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: 'bounce',
     duration: 2000,
     from: { color: '#aaa', width: 4 },
-    to: { color: '#0d6efd', width: 4 },
+    to: { color: '#5e5ef2', width: 4 },
     // Set default step function for all animate calls
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: 'bounce',
     duration: 1400,
     from: { color: '#aaa', width: 4 },
-    to: { color: '#0d6efd', width: 4 },
+    to: { color: '#5e5ef2', width: 4 },
     // Set default step function for all animate calls
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: 'bounce',
     duration: 1400,
     from: { color: '#aaa', width: 4 },
-    to: { color: '#0d6efd', width: 4 },
+    to: { color: '#5e5ef2', width: 4 },
     // Set default step function for all animate calls
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: 'bounce',
     duration: 1400,
     from: { color: '#aaa', width: 4 },
-    to: { color: '#0d6efd', width: 4 },
+    to: { color: '#5e5ef2', width: 4 },
     // Set default step function for all animate calls
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: 'bounce',
     duration: 1400,
     from: { color: '#aaa', width: 4 },
-    to: { color: '#0d6efd', width: 4 },
+    to: { color: '#5e5ef2', width: 4 },
     // Set default step function for all animate calls
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);

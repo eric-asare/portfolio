@@ -13,7 +13,7 @@
 
 ::selection {
     background-color: var(--primary-color);
-    color: blue;
+    color: white;
 }
 
 body {
@@ -69,13 +69,11 @@ span.bgcolor,
 }
 
 /* ---- --------------- Landing Page ------------------- */
-.landingPage {
-    height: 100vh;
-}
+
 
 /* ------------------- About ------------------- */
 .about {
-    margin-top: 40%;
+    margin-top: 10%;
    display:flex;
    justify-content: space-around;
     align-items: center;
@@ -86,6 +84,8 @@ span.bgcolor,
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10%; 
+  margin-right: 7%;
 }
 
 /* ------------------- Logo ------------------- */
@@ -98,8 +98,8 @@ span.bgcolor,
 
 /* ---------------------------Avatar---------------------------*/
 #avatar {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin: 20px auto;
     display: block;
@@ -107,7 +107,7 @@ span.bgcolor,
 }
 
 .typing-container, p{
-    font-size: 40px;
+    font-size: 36px;
 }
 
 /* ------------------- skills ------------------- */
@@ -212,13 +212,10 @@ nav ul li a:hover::after {
 
 .workExperience-col h3 {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.workExperience-col p {
-    margin-top: 10px;
-    font-size: 14px;
-}
 
 .workExperience-col a {
     text-decoration: none;
@@ -235,6 +232,18 @@ nav ul li a:hover::after {
 
 .workExperience-col:hover a {
     color: black;
+}
+
+ .position{
+    font-size: 20px;
+}
+
+.task{
+    font-size: 14px;
+}
+
+.date{
+    font-size: 12px;
 }
 
 #googleLogo {
@@ -254,6 +263,10 @@ nav ul li a:hover::after {
 /* -------------------Skills------------------- */
 #skills {
     margin-top: 20px;
+}
+
+#skills-title{
+    padding-left: 5%;
 }
 
 /* ------------------- Skills ------------------- */
@@ -330,28 +343,50 @@ nav ul li a:hover::after {
     
     .skills-container{
         margin: 20px;
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
+        font-size: 10px;
         position: relative;
     }
+
+    #avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 20px auto;
+        display: block;
+        border: 5px solid var(--primary-color);
+    }
+    
+    .typing-container, p{
+        font-size: 15px;
+    }
+    
+    /* ------------------- skills ------------------- */
+    #specialize{
+        text-align: center;
+        padding: 2em;
+    }
+
+ 
 
 }
 
 
 /* ------------------- Projects ------------------- */
-.section.portfolio .filters {
+.section.projects .filters {
     text-align: center;
     margin-top: 10px;
   }
-  .section.portfolio .filters ul {
+  .section.projects .filters ul {
     padding: 0;
   }
-  .section.portfolio .filters ul li {
+  .section.projects .filters ul li {
     list-style: none;
     display: inline-block;
     cursor: pointer;
     position: relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--primary-color);
     padding: 10px 20px;
     border-radius: 4px;
     -webkit-transition: all 0.3s;
@@ -359,52 +394,52 @@ nav ul li a:hover::after {
     margin: 5px;
     letter-spacing: 1px;
   }
-  .section.portfolio .filters ul li:after {
+  .section.projects .filters ul li:after {
     content: '';
     display: block;
     width: calc(0% - 60px);
     position: absolute;
     height: 2px;
-    background: #333;
+    background: var(--primary-color);
     transition: width 350ms ease-out;
   }
-  .section.portfolio .filters ul li:hover:after {
-    width: calc(100% - 60px);
+  .section.projects .filters ul li:hover:after {
+    width: calc(100% - 40px);
     transition: width 350ms ease-out;
   }
-  .section.portfolio .filters ul li.active:after {
-    width: calc(100% - 60px);
+  .section.projects .filters ul li.active:after {
+    width: calc(100% - 40px);
   }
-  .section.portfolio .filters-content {
+  .section.projects .filters-content {
     margin-top: 50px;
   }
-  .section.portfolio .filters-content .show {
+  .section.projects .filters-content .show {
     opacity: 1;
     visibility: visible;
     transition: all 350ms;
   }
-  .section.portfolio .filters-content .hide {
+  .section.projects .filters-content .hide {
     opacity: 0;
     visibility: hidden;
     transition: all 350ms;
   }
   .after-click {
-    color: #87ceeb;
+    color: var(--primary-color);
     font-weight: bold;
   }
   .project-view a {
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 1px;
-    color: #808080;
+    color: #fff;
   }
   
   .after-click {
-    color: #87ceeb;
+    color: var(--primary-color);
     font-weight: bold;
   }
   
-  .portfolio .item{
+  .projects .item{
     float:left;
     width:300px;
     margin:10px;
@@ -412,13 +447,13 @@ nav ul li a:hover::after {
     border-radius:11px;
     border:1px solid #ddd;
   }
-  .portfolio .item .thumb{
+  .projects .item .thumb{
     float:left;
     width:100%;
     overflow:hidden;
     position:relative;
   }
-  .portfolio .item .thumb img{
+  .projects .item .thumb img{
     float:left;
     width:100%;
     height:auto;
@@ -427,10 +462,10 @@ nav ul li a:hover::after {
     aspect-ratio:1/1;
     transition:0.6s;
   }
-  .portfolio .item:hover .thumb img{
+  .projects .item:hover .thumb img{
     transform:scale(1.1);
   }
-  .portfolio .item .thumb a.category{
+  .projects .item .thumb a.category{
     position:absolute;
     width:auto;
     padding:7px 14px;
@@ -442,10 +477,10 @@ nav ul li a:hover::after {
     transition:0.6s;
     text-transform:uppercase;
   }
-  .portfolio .item:hover .thumb a.category{
+  .projects .item:hover .thumb a.category{
     top:15px;
   }
-  .portfolio .item .thumb a.galleryimage{
+  .projects .item .thumb a.galleryimage{
     position:absolute;
     width:100%; height:100%;
     left:0; top:0;
@@ -459,32 +494,32 @@ nav ul li a:hover::after {
     opacity:0;
     transition:0.6s;
   }
-  .portfolio .item:hover .thumb a.galleryimage{
+  .projects .item:hover .thumb a.galleryimage{
     opacity:1;
   }
-  .portfolio .item .text{
+  .projects .item .text{
     float:left; width:100%;
     padding:20px;
   }
-  .portfolio .item .text h3{
+  .projects .item .text h3{
     color:#000;
     font-size:19px;
     margin:0 0 15px 0;
   }
-  .portfolio .item .text h3 a{
+  .projects .item .text h3 a{
     color:rgb(255, 255, 255);
     border-bottom:1px solid rgba(0,0,0,0);
     transition:0.6s;
   }
-  .portfolio .item .text h3:hover a{
+  .projects .item .text h3:hover a{
     border-bottom:1px solid rgba(0,0,0,1);
   }
-  .portfolio .item .text p{
+  .projects .item .text p{
     color:#666;
     font-size:14px;
     margin:0 0 15px 0;
   }
-  .portfolio .item .text a.view{
+  .projects .item .text a.view{
     display:table;
     width:auto; height:auto;
     padding:10px 25px;
@@ -494,11 +529,11 @@ nav ul li a:hover::after {
     border-radius:20px;
     transition:0.6s;
   }
-  .portfolio .item .text a.view:hover{
+  .projects .item .text a.view:hover{
     background:#000;
     color:#fff;
   }
-  .portfolio .item .text a.view span{
+  .projects .item .text a.view span{
     margin-left:6px;
   }
   p.brandtext{
@@ -515,30 +550,30 @@ nav ul li a:hover::after {
   }
 
   
-#portfolio .row {
+#projects .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 40px;
 }
 
-.portfolio-col{
+.projects-col{
     border-radius: 17px;
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-col img{
+.projects-col img{
     width: 100%;
     border-radius: 17px;
     transition: transform 0.5s;
 }
 
-.portfolio-col:hover img {
+.projects-col:hover img {
     transform: scale(1.2);
 }
 
-#portfolio .layer {
+#projects .layer {
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -556,17 +591,17 @@ nav ul li a:hover::after {
     transition: height 0.5s;
 }
 
-#portfolio .layer h3{
+#projects .layer h3{
     font-size: 25px;
     font-weight: 500;
 }
 
-#portfolio .layer p{
+#projects .layer p{
     font-size: 15px;
     margin-top: 25px;
 }
 
-#portfolio .layer a {
+#projects .layer a {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -582,8 +617,12 @@ nav ul li a:hover::after {
 
 }
 
-#portfolio .portfolio-col:hover .layer {
+#projects .projects-col:hover .layer {
     height: 100%;
+}
+
+#projects-title{
+    padding-left:5%;
 }
 
 
@@ -687,7 +726,7 @@ footer {
 
     /* -------------- Utility Clases ------------------ */
     .sub-title {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     nav ul li a {

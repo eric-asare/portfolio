@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -20,7 +23,7 @@
             <ul id="mobile-menu">
                 <li><a href="#about">About<span class="color">.</span></a></li>
                 <li><a href="#workExperience">Experience<span class="color">.</span></a></li>
-                <li><a href="#portfolio">Projects<span class="color">.</span></a></li>
+                <li><a href="#projects">Projects<span class="color">.</span></a></li>
                 <li><a href="#contact">Contact Me<span class="color">.</span></a></li>
                 <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </ul>
@@ -34,7 +37,7 @@
        <div class="about-info">
          <!-- About -->
          <div>
-            <h2 class = "sub-title">My name is  <span class="color">E</span>ric Asare</h2>
+            <h2 id="name" class = "sub-title">My name is  <span class="color">E</span>ric Asare</h2>
         </div>
         <div class="typing-container">
             <p>I am <span class="typing-text"></span></p>
@@ -58,23 +61,23 @@
                 <div class="workExperience-col">
                     <img id="qlubLogo" src="./images/qlub.png" alt="">
                     <h3>Qlub.io</h3>
-                    <p> Software Engineer Intern</p><br>
-                    <p> Building the fastest payment system for Restaurants</p><br>
-                    <p>Summer 2023, Dubai </p><br>
+                    <p class="position"> Software Engineer Intern</p><br>
+                    <p class="task"> Building the fastest payment system for Restaurants. Imagine guests can view your menu and pay for meals in one split-second scan.</p><br>
+                    <p class="date">Summer 2023, Dubai </p><br>
                 </div>
                 <div class="workExperience-col">
                     <img id= "kehillahLogo" src="./images/Kehillah.png" alt="">
                     <h3>Kehillah Global</h3>
-                    <p> Software Engineer Intern</p><br>
-                    <p> Built a game-changing financial product, enabling entrepreneurs make informed and strategic business decision-making faster. </p><br>
-                    <p>Fall 2022, Remote</p><br>
+                    <p class="position"> Software Engineer Intern</p><br>
+                    <p class = "task"> Built a game-changing financial product, enabling entrepreneurs make informed and strategic business decision-making faster. </p><br>
+                    <p class="date">Fall 2022, Remote</p><br>
                 </div>
                 <div class="workExperience-col">
                     <img id="googleLogo" src="./images/google.png" alt="">
                     <h3>Google</h3>
-                    <p> Software Engineer Intern</p><br>
-                    <p> Saved 3-4 hours of engineering time by developing a groundbreaking solution for bug triaging.</p><br>
-                    <p>Summer 2022, London</p><br>
+                    <p class = "position"> Software Engineer Intern</p><br>
+                    <p class = "task"> Saved 3-4 hours of engineering time by developing a groundbreaking solution for bug triaging.</p><br>
+                    <p class="date">Summer 2022, London</p><br>
                 </div>
  
             </div>
@@ -83,7 +86,7 @@
     </section>
 
     <section class="skills">
-        <h2 class="sub-title">Skills<span class="color">.</span></h2>
+        <h2 id = "skills-title" class="sub-title">Skills<span class="color">.</span></h2>
         <h2 id = "specialize">I'm a developer and I specialize in </h2>
         <div class = "skill-list">
             <div class="skills-first-set">
@@ -101,8 +104,8 @@
 
      
     <!-- projects section start -->
-<section class="portfolio section">
-    <h2 class="sub-title">Projects<span class="color">.</span></h2>
+<section class="projects section">
+    <h2 id = "projects-title" class="sub-title">Projects<span class="color">.</span></h2>
     <div class="container-fluid">
       <div class="filters">
         <ul>
@@ -128,7 +131,54 @@
               </div>
             </div>
           </div>
-          
+          <div class="col-sm-4 all websites">
+            <div class="item">
+              <div class="thumb">
+                <img src="https://source.layoutflow.com/assets/astronaut-3d.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3><a href="#">Astronaut 3D</a></h3>
+                <p>Generated Using AI. It's a Photo from Unsplash.</p>
+                <a href="#" class="view">Code <span class="fa-solid fa-angle-right"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 all websites">
+            <div class="item">
+              <div class="thumb">
+                <img src="https://source.layoutflow.com/assets/astronaut-3d.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3><a href="#">Astronaut 3D</a></h3>
+                <p>Generated Using AI. It's a Photo from Unsplash.</p>
+                <a href="#" class="view">Code <span class="fa-solid fa-angle-right"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 all websites">
+            <div class="item">
+              <div class="thumb">
+                <img src="https://source.layoutflow.com/assets/astronaut-3d.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3><a href="#">Astronaut 3D</a></h3>
+                <p>Generated Using AI. It's a Photo from Unsplash.</p>
+                <a href="#" class="view">Code <span class="fa-solid fa-angle-right"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 all websites">
+            <div class="item">
+              <div class="thumb">
+                <img src="https://source.layoutflow.com/assets/astronaut-3d.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3><a href="#">Astronaut 3D</a></h3>
+                <p>Generated Using AI. It's a Photo from Unsplash.</p>
+                <a href="#" class="view">Code <span class="fa-solid fa-angle-right"></span></a>
+              </div>
+            </div>
+          </div>
           
           <div class="col-sm-4 all ">
             <div class="item">
