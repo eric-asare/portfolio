@@ -173,7 +173,7 @@ button:hover {
 
 /* ------------------- skills ------------------- */
 
-#specialize {
+.specialize {
     text-align: center;
     padding: 3em;
 }
@@ -198,6 +198,16 @@ button:hover {
 
 .skills svg #text {
     font-size: 1em;
+}
+
+.techstack {
+    display: flex;
+    row-gap: 2em;
+    justify-content: center;
+}
+
+.techstack img {
+    width: 9%
 }
 
 nav {
@@ -369,6 +379,7 @@ nav ul li a:hover::after {
     transition: all 0.3s;
     margin: 5px;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 .section.projects .filters ul li:after {
@@ -830,7 +841,7 @@ footer p {
         font-size: 15px;
     }
     /* ------------------- skills ------------------- */
-    #specialize {
+    .specialize {
         text-align: center;
         padding: 3em;
     }
