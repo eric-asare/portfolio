@@ -314,5 +314,37 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
+    // ------- Send Message to Email ------------
+    emailjs.init('Qh1TJkKL0sFRyfzkF');
+
+    const btn = document.getElementById('submit-btn');
+
+    document.getElementById('contact-form')
+        .addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            btn.value = 'Sending...';
+
+            // clear the form
+            document.getElementById('contact-form').reset();
+
+            const serviceID = 'default_service';
+            const templateID = 'template_r3xrusr';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Sent!';
+                    setTimeout(function() {
+                        btn.value = 'Send Message';
+                    }, 1000);
+
+                }, (err) => {
+                    btn.value = 'Not Sent!';
+                    setTimeout(function() {
+                        btn.value = 'Send Message';
+                    }, 1000);
+                });
+        });
+
 
 });

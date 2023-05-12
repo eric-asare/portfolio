@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
     <title>Eric Asare</title>
 </head>
@@ -251,10 +251,10 @@
                 <div class="row">
                     <div class="contact-left">
                         <form id="contact-form">
-                            <input type="text" name="fullName" id="full-name" placeholder="Your Name">
-                            <input type="email" name="Email" id="email" placeholder="Your Email">
+                            <input type="text" name="from_name" id="full-name" placeholder="Your Name">
+                            <input type="email" name="from_email" id="email" placeholder="Your Email">
                             <textarea name="message" id="message" rows="10" placeholder="Your Message To Me ..."></textarea>
-                            <input type="submit" value="Submit" class="btn2">
+                            <input type="submit" id="submit-btn" value="Send Message" class="btn2">
                         </form>
                     </div>
                     <div class="contact-right">
