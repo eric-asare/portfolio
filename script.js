@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Download CV
     document.getElementById("download-cv").addEventListener("click", () => {
-        window.open("https://drive.google.com/file/d/1kcBmpJvWkmTmP6MYLFZjGgeN3ceBkexs/view?usp=sharing");
+        window.open("https://drive.google.com/file/d/1JM_gvZS_qVcyJvY4XlDE3gq4DfUL9m9t/view?usp=sharing");
     });
 
     // Copy Email and Number
