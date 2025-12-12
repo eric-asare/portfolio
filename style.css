@@ -82,9 +82,10 @@ span.bgcolor,
 .about {
     height: 80vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 50px;
 }
 
 .about-info {
@@ -119,6 +120,11 @@ span.bgcolor,
 .typing-container,
 p {
     font-size: 36px;
+}
+
+.typing-container p {
+    max-width: 600px;
+    word-wrap: break-word;
 }
 
 
@@ -267,7 +273,8 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
-#workExperience .row {
+#workExperience .row,
+#researchExperience .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -279,6 +286,12 @@ nav ul li a:hover::after {
     padding: 20px;
     border-radius: 17px;
     transition: background 1s, color 1s, transform 0.5s;
+}
+
+.workExperience-col img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .workExperience-col i {

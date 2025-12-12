@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var typingElement = document.querySelector(".typing-text");
-    var typeArray = ["a computer scientist", "a researcher", "a software engineer", "an NYU Abu Dhabi graduate", " a health enthusiast", "all in for clinical AI", "a first-aid responder", "a long-distance runner", "an A1 cook", "all about problem solving", "all about developing and deploying solutions", "all about user experience", "a human after all :)"];
+    var typeArray = ["a computer scientist", "a researcher", "a software engineer", "an NYU Abu Dhabi graduate", "from a small town in Ghana", "a health enthusiast", "a first-aid responder","all for clinical AI","a long-distance runner", "a home chef", "all about problem solving", "developing and deploying solutions", "all about user experience", "saved by Grace alone", "a human after all :)"];
     var index = 0,
         isAdding = true,
         typeIndex = 0;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         // If text typed completely, wait 2s before starting to remove it.
                         setTimeout(function() {
                             playAnim();
-                        }, 2000);
+                        }, 1500);
                         return;
                     } else {
                         // Continue to typing text by increasing index
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
               If removing text, call it every 60ms
               Type slower, remove faster
             */
-            isAdding ? 120 : 60
+            isAdding ? 80 : 60
         );
     }
 
