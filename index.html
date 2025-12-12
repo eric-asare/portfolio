@@ -25,6 +25,7 @@
             <ul id="mobile-menu">
                 <li><a href="#about">About<span class="color">.</span></a></li>
                 <li><a href="#workExperience">Experience<span class="color">.</span></a></li>
+                <li><a href="#papers">Publications<span class="color">.</span></a></li>
                 <li><a href="#projects">Projects<span class="color">.</span></a></li>
                 <li><a href="#contact">Contact Me<span class="color">.</span></a></li>
                 <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
@@ -34,7 +35,7 @@
         <div class="about">
             <!-- Avatar-->
             <div>
-                <img id="avatar" src="./images/avatar.png" alt="avatar">
+                <img id="avatar" src="./images/profile_pic.jpeg" alt="avatar">
             </div>
             <div class="about-info">
                 <!-- About -->
@@ -49,7 +50,7 @@
 
         <!--CV-->
         <div class="cv">
-            <button id="download-cv">Download CV</button>
+            <button id="download-cv">View CV</button>
         </div>
     </section>
 
@@ -87,7 +88,69 @@
         </div>
     </section>
 
+    <section>
+        <div id="researchExperience">
+            <div class="container">
+                <h2 class="sub-title">Research Experience<span class="color">.</span></h2>
+                <div class="row">
+                    <div class="workExperience-col">
+                        <img id="qlubLogo" src="./images/qlub.png" alt="">
+                        <h3>Qlub.io</h3>
+                        <p class="position"> Software Engineer Intern</p><br>
+                        <p class="task"> Building the fastest payment system for Restaurants. Imagine guests can view your menu and pay for meals in one split-second scan.</p><br>
+                        <p class="date">Summer 2023, Dubai </p><br>
+                    </div>
+                    <div class="workExperience-col">
+                        <img id="kehillahLogo" src="./images/kehillah.png" alt="">
+                        <h3>Kehillah Global</h3>
+                        <p class="position"> Software Engineer Intern</p><br>
+                        <p class="task"> Built a game-changing financial product, enabling entrepreneurs make informed and strategic business decision-making faster. </p><br>
+                        <p class="date">Fall 2022, Remote</p><br>
+                    </div>
+                    <div class="workExperience-col">
+                        <img id="googleLogo" src="./images/google.png" alt="">
+                        <h3>Google</h3>
+                        <p class="position"> Software Engineer Intern</p><br>
+                        <p class="task"> Saved 3-4 hours of engineering time by developing a groundbreaking solution for bug triaging.</p><br>
+                        <p class="date">Summer 2022, London</p><br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section Start -->
+    <section id="papers" class="papers section">
+        <div class="container">
+            <h2 id="papers-title" class="sub-title">Publications<span class="color">.</span></h2>
+            <div class="row">
+                <div class="paper-col">
+                    <h3>A Friend or a Foe? Evaluating ChatGPT’s Impact on Students’ Computational Thinking Skills</h3>
+                    <p>May Mahmoud, Eric Asare, Nourhan Sakr, and Sarah Nadi</p>
+                    <p class="conference">In Proceedings of International Workshop on evaLuation and assEssment in softwARe eNgineers’ Education and tRaining (LEARNER 2025)</p>
+                    <a href="./papers/LEARNER25.pdf" target="_blank" class="view">Paper <span class="fa-solid fa-angle-right"></span></a>
+                </div>
+                <div class="paper-col">
+                    <h3>How do third-party Python libraries use type annotations?</h3>
+                    <p>Eric Asare, Sarah Nadi</p>
+                    <p class="conference">Under review at MSR 2026.</p>
+                    <a href="./papers/pyannotations (under review MSR 2026).pdf" target="_blank" class="view">Paper <span class="fa-solid fa-angle-right"></span></a>
+                </div>
+                <div class="paper-col">
+                    <h3>Fast and Fleeting: Evaluating ChatGPT’s Impact on Students’Computational Thinking Skills</h3>
+                    <p>May Mahmoud, Eric Asare, Nisa Shahid, Nourhan Sakr, Sarah Nadi</p>
+                    <p class="conference">In submission at CHASE 2026.</p>
+                    <a href="./papers/Fast and Fleeting (under review CHASE 2026).pdf" target="_blank" class="view">Paper <span class="fa-solid fa-angle-right"></span></a>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+
     <section class="skills">
+        <div class="container">
         <h2 id="skills-title" class="sub-title">Skills<span class="color">.</span></h2>
         <h2 class="specialize">I'm a developer and I specialize in </h2>
         <div class="skill-list">
@@ -116,6 +179,7 @@
             <img src="./images/techstack/postgresql.svg" alt="">
             <img src="./images/techstack/sqlite.svg" alt="">
         </div>
+    </div>
     </section>
 
     <!-- projects section start -->
@@ -243,24 +307,13 @@
         <div id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="contact-left">
-                        <form id="contact-form">
-                            <input type="text" name="from_name" id="full-name" placeholder="Your Name" required>
-                            <input type="email" name="from_email" id="email" placeholder="Your Email" required>
-                            <textarea name="message" id="message" rows="10" placeholder="Your Message To Me ..." required></textarea>
-                            <input type="submit" id="submit-btn" value="Send Message" class="btn2">
-                        </form>
-                    </div>
                     <div class="contact-right">
                         <h2 class="sub-title">Contact<span class="color">.</span></h2>
-                        <p class="bgcolor"><i class="fa-sharp fa-solid fa-phone"></i> Phone</p>
-                        <p> +971053666838 <button id="number-copy"><i class="fa-solid fa-copy"></i></button></p>
-                        <p class="bgcolor"><i class="fa-solid fa-paper-plane"></i> Email</p>
+                        <!-- <p class="bgcolor"><i class="fa-solid fa-paper-plane"></i> Email</p> -->
                         <p>ericasare043@gmail.com <button id="email-copy"><i class="fa-solid fa-copy"></i></button></p>
-                        <p class="bgcolor"><i class="fa-solid fa-user"></i> Social Profiles </p>
                         <ul>
                             <li><a href="https://www.linkedin.com/in/eric-asare/"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/_ericasare"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li><a href="https://github.com/eric-asare"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -269,7 +322,7 @@
     </section>
     <footer>
         <div class="container">
-            <p>Copyright © 2023 <span class="color">Eric</span><span class="color">.</span> Asare <span class="color">|</span> All rights reserved.</p>
+            <p><span class="color">Eric</span><span class="color">.</span> Asare <span class="color">|</span> All rights reserved.</p>
         </div>
     </footer>
 </body>

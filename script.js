@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var typingElement = document.querySelector(".typing-text");
-    var typeArray = ["a Software Engineer", "from Ghana", "studying Computer Science at NYU", "graduating in December 2024", "looking for full-time opportunities"];
+    var typeArray = ["a computer scientist", "a researcher", "a software engineer", "an NYU Abu Dhabi graduate", " a health enthusiast", "all in for clinical AI", "a first-aid responder", "a long-distance runner", "an A1 cook", "all about problem solving", "all about developing and deploying solutions", "all about user experience", "a human after all :)"];
     var index = 0,
         isAdding = true,
         typeIndex = 0;
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Download CV
     document.getElementById("download-cv").addEventListener("click", () => {
-        window.open("https://docs.google.com/document/d/160fwE6MFH8I7_oHBIJkXyjcQDv-VrXwbQ_3gzljZySE/edit?usp=sharing");
+        window.open("https://drive.google.com/file/d/1RO-1pwDnl6ZOLDvJ4XsSxsqeklQgIHZb/view?usp=sharing", "_blank");
     });
 
     // Copy Email and Number
@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     document.getElementById("number-copy").addEventListener("click", () => {
-        navigator.clipboard.writeText("+971053666838");
+        navigator.clipboard.writeText("+97153666838");
 
         // Add the 'copy-animation' class to trigger the gelatin effect
         document.getElementById('number-copy').classList.add('copy-animation');
@@ -345,6 +345,5 @@ document.addEventListener("DOMContentLoaded", function() {
                     }, 1000);
                 });
         });
-
 
 });
