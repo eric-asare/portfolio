@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Download CV
     document.getElementById("download-cv").addEventListener("click", () => {
-        window.open("https://drive.google.com/file/d/1RO-1pwDnl6ZOLDvJ4XsSxsqeklQgIHZb/view?usp=sharing", "_blank");
+        window.open("https://eric-asare.github.io/website/cv.pdf", "_blank");
     });
 
     // Copy Email and Number
